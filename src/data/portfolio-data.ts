@@ -41,7 +41,7 @@ export const allSkills = [
   { name: 'ShadcnUI', icon: 'shadcnui' },
   { name: 'Java', icon: 'openjdk' },
   { name: 'HTML', icon: 'html5' },
-  { name: 'CSS', icon: 'css3' },
+  { name: 'CSS', icon: 'css' },
 ];
 
 export const galleryItems = [
