@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   
     <nav className="fixed top-0 w-full z-50 bg-[#0a1120]/85 backdrop-blur-md border-b border-zinc-800">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20"> {/* Slightly increased height for better spacing */}
+        <div className="flex items-center justify-between h-20">
           
           {/* Logo */}
           <div className="flex-shrink-0 flex-1">
@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
             </span>
           </div>
 
-          {/* 2. Desktop Menu (Centered) */}
+          {/* 2. Desktop Menu */}
           <div className="hidden md:flex flex-1 justify-center">
             <div className="flex items-baseline space-x-10">
               {navLinks.map((link) => (
@@ -33,14 +33,13 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          {/* 3. Resume Button (Stays Right) - UPDATED with Reference Design */}
-          <div className="hidden md:flex flex-1 justify-end">
+          {/* 3. Resume Button */}
+          {/* <div className="hidden md:flex flex-1 justify-end">
             <a 
-                href="/Franz_Resume.pdf" /* Replace with actual path */
+                href="/Franz_Resume.pdf"
                 download
                 className="group flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-zinc-700 bg-transparent text-zinc-100 text-sm font-semibold transition-all hover:bg-zinc-800 hover:border-zinc-600"
             >
-              {/* Reference Download Icon */}
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 fill="none" 
@@ -53,7 +52,7 @@ const Navbar: React.FC = () => {
               </svg>
               Resume
             </a>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -90,8 +89,8 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            {/* Mobile Resume Button (Updated to match design style) */}
-            <div className="px-3 pt-3">
+            {/* Mobile Resume Button */}
+            {/* <div className="px-3 pt-3">
                 <a 
                     href="/Franz_Resume.pdf"
                     download
@@ -102,7 +101,7 @@ const Navbar: React.FC = () => {
                     </svg>
                     Resume
                 </a>
-            </div>
+            </div> */}
           </div>
         </div>
       )}

@@ -3,10 +3,8 @@ import Container from "./layout/Container";
 
 const About = () => {
   return (
-    /* 1. Added overflow-hidden to act as a safety net against horizontal shifting */
     <section id="about" className="py-24 bg-[#0a1120] overflow-hidden">
       <Container>
-        {/* 2. Responsive Heading: text-3xl on mobile prevents 'zoom out' behavior */}
         <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-16">
           About Me
         </h2>
@@ -14,7 +12,6 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Side: Circular Image */}
           <div className="flex justify-center">
-            {/* Added max-w-full to ensure the image container doesn't push past screen edges */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-zinc-800 shadow-2xl max-w-full">
               <img 
                 src={personalInfo.profileImage}
@@ -25,7 +22,6 @@ const About = () => {
           </div>
 
           {/* Right Side: Content */}
-          {/* Added text-center for mobile to keep the layout balanced when columns stack */}
           <div className="text-zinc-400 space-y-6 text-lg leading-relaxed max-w-xl mx-auto md:mx-0 text-center md:text-left">
             {personalInfo.bio.map((paragraph, index) => (
               <p key={index} className='text-base md:text-lg mb-6'>

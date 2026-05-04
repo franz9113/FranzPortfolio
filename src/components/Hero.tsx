@@ -3,14 +3,9 @@ import { personalInfo } from "@/data/portfolio-data";
 
 const Hero = () => {
   return (
-    /* 1. Added overflow-hidden to prevent the background glow from pushing the page width */
     <section id="hero" className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-      
-      {/* 2. Added text-center here to ensure all children align to the middle */}
       <Container className="text-center relative z-10 w-full">
-        
         <div className="flex flex-col items-center">
-          
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-8">
             <span className="relative flex h-2 w-2">
@@ -22,18 +17,18 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Headline - CRITICAL: Changed to text-4xl on mobile to prevent layout breaking */}
+          {/* Headline */}
           <h1 className="text-white text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-8 w-full break-words px-2">
             Hi, I'm <span className="text-emerald-500">{personalInfo.name.split(' ')[0]}</span><br />
             {personalInfo.role}
           </h1>
 
-          {/* Sub-headline - Smaller font and padding for mobile readability */}
+          {/* Sub-headline */}
           <p className="text-zinc-400 text-base md:text-xl max-w-2xl mb-12 leading-relaxed font-light px-4">
             {personalInfo.subheadline}
           </p>
 
-          {/* Action Buttons - Fixed width-fit to prevent oversized buttons on mobile */}
+          {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-6">
             <a 
               href="#gallery" 
@@ -61,7 +56,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Decorative background glow - Managed by parent overflow-hidden */}
+        {/* Decorative background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-emerald-500/5 rounded-full blur-[100px] -z-10"></div>
       </Container>
     </section>
