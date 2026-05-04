@@ -34,9 +34,9 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* 3. Resume Button */}
-          {/* <div className="hidden md:flex flex-1 justify-end">
+          <div className="hidden md:flex flex-1 justify-end">
             <a 
-                href="/Franz_Resume.pdf"
+                href="/CV_Franz_Siblos.pdf"
                 download
                 className="group flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-zinc-700 bg-transparent text-zinc-100 text-sm font-semibold transition-all hover:bg-zinc-800 hover:border-zinc-600"
             >
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
               </svg>
               Resume
             </a>
-          </div> */}
+          </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               </a>
             ))}
             {/* Mobile Resume Button */}
-            {/* <div className="px-3 pt-3">
+            <div className="px-3 pt-3">
                 <a 
                     href="/Franz_Resume.pdf"
                     download
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
                     </svg>
                     Resume
                 </a>
-            </div> */}
+            </div>
           </div>
         </div>
       )}
