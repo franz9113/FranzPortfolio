@@ -115,9 +115,9 @@ export const projectDetails = {
     tools: ['Figma', 'React Native', 'JavaScript', 'Firebase'],
     year: '2021',
     overview:
-      'The mobile companion app for the Foruta food delivery platform, designed to provide customers with an intuitive ordering experience on their smartphones.',
+      'A high-fidelity redesign of the Foruta mobile application. Originally a PHP-based food delivery app, this project serves as a modern reconstruction in Figma, designed to preserve and enhance the core user experience through updated design patterns and improved accessibility.',
     contribution:
-      'I designed the complete user interface in Figma, focusing on user experience and accessibility. I also contributed to the frontend development using React Native, ensuring the design was implemented accurately.',
+      'I designed this high-fidelity Figma prototype as a modern evolution of the Foruta food delivery app. With the original production project no longer active, I utilized this redesign to showcase my skills in information architecture and contemporary UI patterns, ensuring a clean and intuitive ordering experience.',
     links: [
       { label: 'View Mobile Designs', url: '#' },
       { label: 'App Store Listing', url: '#' },
